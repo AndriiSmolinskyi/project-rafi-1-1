@@ -126,7 +126,6 @@ body{
 }
 
 .big__btn:hover{
-    transform: scale(1.1);
     opacity: 0.8;
 }
 
@@ -175,6 +174,11 @@ body{
 .third-bg{
     background-color: black;
     padding: 120px;
+
+    @media screen and (max-width: 1140px){
+        padding: 0px;
+        background-color: none;
+    }
 }
 
 .third{
@@ -188,6 +192,18 @@ body{
     align-items: flex-end;
     padding-right: 135px;
 
+    @media screen and (max-width: 890px){
+        padding-right: 0px;
+    }
+
+    @media screen and (max-width: 586px){
+        background-position: top;
+        height: 1610px;
+        justify-content: end;
+        align-items: center;
+        background-image: url('/img/Sec\ 3\ BG\ \(1\).png');
+    }
+
     .third__item{
         display: flex;
         flex-direction: column;
@@ -198,8 +214,16 @@ body{
         backdrop-filter: blur(22px);
         padding: 50px;
 
+        @media screen and (max-width: 586px){
+            max-width: 586px;
+            padding: 30px 10px 30px 10px;
+        }
+
         .third__item__subtitle{
             font-size: 58px;
+            @media screen and (max-width: 586px){
+                font-size: 44px;
+            }
         }
         .third__item__text{
             color: $white;
@@ -212,3 +236,98 @@ body{
         }
     }
 }
+
+.four-bg{
+    background-color: #F1F1F1;
+}
+
+.four{ 
+    padding-top: 90px;
+    padding-bottom: 90px;
+
+    .four__flex{
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+
+        .four__flex__item{
+            max-width: 370px;
+            height: 635px;
+            background-color: $white;
+            
+            .img__block{
+                position: relative;
+
+                .four__flex__item__img{
+                    width: 100%;
+                }
+
+                .four__date{
+                    position: absolute;
+                    z-index: 2;
+                    left: 0%;
+                    bottom: 0%;
+                    width: 178px;
+                    height: 46px;
+                    background-color: $white;
+                    text-align: center;
+                    padding: 15px;
+                    box-sizing: border-box;
+                }
+            }
+
+            .four__flex__item__title{
+                color: #000;
+                font-style: Open Sans;
+                font-size: 20px;
+                font-weight: 700;
+                margin: 30px 38px 15px 38px;
+            }
+
+            .four__flex__item__text{
+                color: #313131;
+                font-family: Open Sans;
+                font-size: 14px;
+                font-weight: 400;
+                letter-spacing: 1.4px;
+                line-height: 24px;
+                margin-right: 38px;
+                margin-left: 38px;
+                flex-grow: 1;
+            }
+        }     
+    }
+
+}
+
+.btn__block{
+    display: none;
+}
+
+.four__btn{
+    width: 300px;
+    height: 65px;
+    background-color: transparent;
+    border: none;
+    border: 4px solid #313131;
+    color: #313131;
+    text-align: center;
+    font-family: Open Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.26px;
+}
+
+.four__btn:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.block__btn__down{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
