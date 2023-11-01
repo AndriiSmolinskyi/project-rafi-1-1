@@ -249,17 +249,21 @@ body{
         display: flex;
         justify-content: space-between;
         gap: 20px;
-
+        
         .four__flex__item{
             max-width: 370px;
             height: 635px;
             background-color: $white;
+            display: flex;
+            flex-direction: column;
+            flex-shrink: 1;
             
             .img__block{
                 position: relative;
+                max-width: 370px;
 
                 .four__flex__item__img{
-                    width: 100%;
+                  width: 100%;
                 }
 
                 .four__date{
@@ -295,7 +299,22 @@ body{
                 margin-left: 38px;
                 flex-grow: 1;
             }
-        }     
+        }  
+        
+        .four__flex__item:nth-child(4){
+            display: none;
+        }
+        
+        .four__flex__item {
+            flex-basis: 0; /* По замовчуванню - auto, змінюємо на 0 */
+            flex-grow: 1; /* За замовчуванням - 0, дозволяємо елементам займати доступний простір */
+            flex-shrink: 1;
+          }
+          
+          .four__flex__item:nth-child(2) {
+            flex-shrink: 2;
+          }
+    
     }
 
 }
