@@ -12,7 +12,7 @@ body{
 }
 
 .first-bg{
-    background-image: url('/img/Sec1BG.png');
+    background-image: url('../img/Sec1BG.png');
     height: 1096px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -149,7 +149,7 @@ body{
 }
 
 .sec-bg{
-    background-image: url('/img/Sec2BG.png');
+    background-image: url('../img/Sec2BG.png');
     height: 811px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -157,7 +157,7 @@ body{
 
     @media screen and (max-width: 586px){
         height: 100vh;
-        background-image: url('/img/Sec2mobile.png');     
+        background-image: url('../img/Sec2mobile.png');     
     }
 
     .sec{
@@ -182,7 +182,7 @@ body{
 }
 
 .third{
-    background-image: url('/img/Sec3BG.png');
+    background-image: url('../img/Sec3BG.png');
     height: 794px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -201,7 +201,7 @@ body{
         height: 1610px;
         justify-content: end;
         align-items: center;
-        background-image: url('/img/Sec3BG(1\).png');
+        background-image: url('../img/Sec3BG(1).png');
     }
 
     .third__item{
